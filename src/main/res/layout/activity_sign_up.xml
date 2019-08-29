@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#C300BCD4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:id="@+id/loginPanel"
+        android:layout_width="match_parent"
+        android:layout_height="600sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </LinearLayout>
+        <!--ROW 1-->
+        <LinearLayout
+            android:layout_margin="3dp"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_weight="2.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="#03A9F4"
+                    android:textSize="20sp"
+                    android:textAlignment="viewStart"
+                    android:gravity="center"
+                    android:text="Phòng ban/đơn vị:"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/idDepartment"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- ROW 2-->
+        <LinearLayout
+            android:layout_margin="3dp"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="#03A9F4"
+                    android:textSize="20sp"
+                    android:textAlignment="viewStart"
+                    android:gravity="center"
+                    android:text="Mã nhân viên:"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/idStaff"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!--ROW 3-->
+        <LinearLayout
+            android:layout_margin="3dp"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="#03A9F4"
+                    android:textSize="20sp"
+                    android:textAlignment="viewStart"
+                    android:gravity="center"
+                    android:text="Password:"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/passReg"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!--ROW 4-->
+        <LinearLayout
+            android:layout_margin="3dp"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="#03A9F4"
+                    android:textSize="20sp"
+                    android:textAlignment="viewStart"
+                    android:gravity="center"
+                    android:text="Confirm pass:"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/passRegConfirm"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!--ROW 5-->
+    <LinearLayout
+        android:layout_margin="3dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="1.3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btnBack"
+                android:text="Back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btnReg"
+                android:text="Signup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+        </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="105dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/loginPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/loginPanel"
+        app:srcCompat="@drawable/act" />
+
+</android.support.constraint.ConstraintLayout>
